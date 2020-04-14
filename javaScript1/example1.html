@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="img/off.gif" id="light">
+<input id="back" value="后退" type="button"><br>
+
+
+<script>
+
+    var light=document.getElementById("light");
+
+    var flag=false;
+    light.onclick=function () {
+        if(flag){
+            light.src="img/off.gif";
+            flag=false;
+        }else{
+            light.src="img/on.gif";
+            flag=true;
+        }
+    }
+    //后退
+    var back=document.getElementById("back");
+    back.onclick=function () {
+        //前进
+        history.back();
+    }
+</script>
+</body>
+</html>

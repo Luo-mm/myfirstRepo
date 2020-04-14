@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件操作</title>
+    <script>
+        //页面加载好才执行
+        window.onload=function () {
+            // document.getElementById("text").onblur=function () {
+            //     alert("请输入正确格式数据");
+            // }
+            // document.getElementById("text").onkeydown=function (event) {
+            //     if(event.keyCode==13){
+            //         alert("提交");
+            //     }
+            // }
+            document.getElementById("form1").onsubmit=function () {
+                return false;
+
+            }
+        }
+    </script>
+</head>
+<body>
+<form id="form1" action="#">
+姓名：<input type="text" id="text"><br>
+    <input id="submit" value="提交" type="submit">
+</form>
+</body>
+</html>

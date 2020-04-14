@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动跳转</title>
+</head>
+<body>
+<center><h2><span id="time" >5</span>秒之后，跳转到首页。。。 </h2></center>
+
+<script>
+    var second=5;
+    var time=document.getElementById("time");
+    function showtime() {
+        second--;
+        if(second<=0){
+            location.href="https://baidu.com";
+        }
+        time.innerHTML=second+"";
+    }
+    //设置定时器
+    setInterval(showtime,1000);
+
+</script>
+</body>
+</html>
